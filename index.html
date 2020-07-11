@@ -1,0 +1,46 @@
+<!--- 
+- Create smooth page transitions
+- Use highway.js for page transitions
+- Add animations to our page transitions with gsap
+- Bundling  with Parcel.js
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./style/style.scss" />
+    <title>Home</title>
+</head>
+
+<body>
+    <nav>
+        <ul class="nav-list">
+            <li><a class="nav-links" href="./index.html ">Home</a></li>
+            <li><a class="nav-links" href="./about.html ">About</a></li>
+            <li><a class="nav-links" href="# ">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!--transition- Only 1 section-->
+    <main data-router-wrapper>
+        <section data-router-view="home" class="home">
+            <div class="home-content">
+                <div class="home-presentation">
+                    <h1>Seamless Transition</h1>
+                    <p>Beautiful Transition between HTML pages</p>
+                </div>
+                <img src="./images/home.svg" alt="home" />
+            </div>
+        </section>
+    </main>
+
+    <!--DEBUG and continue on 29.16 from 33:40
+        https://www.youtube.com/watch?v=1dJT-99KpiI&feature=emb_logo-->
+    <script src="./JS/index.js "></script>
+</body>
+
+</html>
